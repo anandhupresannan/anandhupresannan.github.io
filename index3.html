@@ -7,27 +7,69 @@
     <link rel="icon" href="/img/cv-fav-icon.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
- 
-    <div class="columns-2">
-        <div>
-            <img src="/img/anandhupresannanBWsmall.png" alt="Anandhu Presannan" class="mx-auto w-32 h-32 rounded-full">
-        </div>
-        <div>
-            <h2>Anandhu Presannan</h2>
-            <p>Bioinformatics | Open Source Enthusiast</p>
-        </div>
+<body class="bg-[#353535] font-mono text-white">
+
+<!-- Link to Lucide Icons CDN -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+    <nav class="bg-[#353535] text-white px-4 py-6">
+    <div class="max-w-4xl mx-auto flex justify-around items-center">
+        
+        <!-- Name or Logo->
+        <div class="text-lg font-semibold">
+        <a href="#">Anandhu Presannan</a>
+        </div-->
+
+        <!-- Desktop Navigation -->
+        <ul class="hidden md:flex space-x-7 text-sm font-mono text-xl">
+        <li><a href="#about" class="hover:text-[hsl(41,100%,50%)]">About</a></li>
+        <li><a href="#skills" class="hover:text-[hsl(41,100%,50%)]">Skills</a></li>
+        <li><a href="#experience" class="hover:text-[hsl(41,100%,50%)]">Experience</a></li>
+        <li><a href="#education" class="hover:text-[hsl(41,100%,50%)]">Education</a></li>
+        <li><a href="#activities" class="hover:text-[hsl(41,100%,50%)]">Activities</a></li>
+        </ul>
     </div>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#activities">Activities</a></li>
-        </ul>
+    <!-- Mobile Navigation (icons at top) -->
+    <div class="flex justify-around mt-4 md:hidden text-white text-sm">
+        <a href="#about" class="flex flex-col items-center hover:text-[hsl(41,100%,50%)]">
+        <i data-lucide="user" class="w-5 h-5"></i>
+        <span class="text-xs">About</span>
+        </a>
+        <a href="#skills" class="flex flex-col items-center hover:text-[hsl(41,100%,50%)]">
+        <i data-lucide="disc" class="w-5 h-5"></i>
+        <span class="text-xs">Skills</span>
+        </a>
+        <a href="#experience" class="flex flex-col items-center hover:text-[hsl(41,100%,50%)]">
+        <i data-lucide="briefcase" class="w-5 h-5"></i>
+        <span class="text-xs">Exp</span>
+        </a>
+        <a href="#education" class="flex flex-col items-center hover:text-[hsl(41,100%,50%)]">
+        <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+        <span class="text-xs">Edu</span>
+        </a>
+        <a href="#activities" class="flex flex-col items-center hover:text-[hsl(41,100%,50%)]">
+        <i data-lucide="square-plus" class="w-5 h-5"></i>
+        <span class="text-xs">Act</span>
+        </a>
+    </div>
     </nav>
+
+    <!-- Activate Lucide Icons -->
+    <script>
+    lucide.createIcons();
+    </script>
+
+    
+    <div class="md:flex md:items-center w-full h-auto">
+        <div class="md:w-1/2 drop-shadow-xl/25 scale-70">
+            <img src="/img/anandhupresannanBWsmall.png" alt="Anandhu Presannan" class="md:w-full h-auto" />
+        </div>
+        <div class="md:w-1/2 text-white md:justify-items-center font-mono">
+            <h1 class="text-5xl font-bold">Anandhu Presannan</h1>
+            <p class="text-xl">Bioinformatics | Open Source Enthusiast</p>
+        </div>
+    </div>
 
     <div>
         <section id="about">
