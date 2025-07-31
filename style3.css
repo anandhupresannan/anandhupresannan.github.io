@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Tailwind-based styles */
+
+.custom-body {
+  @apply bg-[#353535] font-mono text-white;
+}
+
+.nav-desktop {
+  @apply hidden md:flex space-x-7 text-sm md:text-xl font-mono;
+}
+
+.navbar {
+  @apply bg-[#353535] text-white px-4 py-3;
+}
+
+.nav-container {
+  @apply max-w-2xl mx-auto flex justify-center;
+}
+
+.nav-link {
+  @apply hover:text-[hsl(41,100%,50%)];
+}
+
+.nav-mobile {
+  @apply fixed bottom-0 w-full flex justify-around bg-[#353535] text-white p-2 md:hidden;
+}
+
+.mobile-link {
+  @apply flex flex-col items-center text-[10px];
+}

@@ -1,0 +1,105 @@
+/* Reset some default styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+    font-size: clamp(1rem, calc(0.8rem + 0.5vw), 1.2rem);
+}
+
+nav {
+    background: #353535;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    padding: min(1.2em, 8%);
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a:hover {
+    color: hsl(41, 100%, 50%);
+}
+
+.hero-section {
+    background-color: #353535;
+    display: flex;
+    align-items: center;
+    flex-direction: row;    
+    padding-bottom: 25px;
+}
+
+.hero-image {
+    background-color: #353535;
+    max-width: 100%;
+    max-height: 550px;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+.profile-image {
+    max-width: 100%;
+    max-height:550px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
+.hero-text {
+    background-color: #353535;
+    color: #ffffff;
+    font-size: clamp(1em, calc(1em + 1vw), 1.5em);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+.hero-text:hover {
+    color: hsl(41, 100%, 50%);
+}
+
+.about-section {
+    background-color: #353535;
+    padding-top: 20px;
+    padding-left: 8%;
+    padding-right: 8%;
+    max-width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.about-me {
+    font-size: clamp(1.2em, calc(1.2em + 0.5vw), 1.5em);
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+
+.aboutme-disc {
+    font-size: clamp(1em, calc(1em + 0.5vw), 1em);
+    color: #ffffff;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    text-indent: 50px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* --- Media Query for smaller screens --- */
+@media (max-width: 768px) { /* Adjust this breakpoint as needed */
+    .hero-section{
+        flex-direction: column; /* Stacks items vertically */
+    }
+}
