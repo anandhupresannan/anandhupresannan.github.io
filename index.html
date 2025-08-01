@@ -1,118 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Anandhu Presannan | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Anandhu Presannan</title>
+    <link rel="icon" href="/img/cv-fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release-pro/v4.0.0/css/solid.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- Link to Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
 </head>
-<body>
-  <header>
-    <h1>Anandhu Presannan</h1>
-    <p>Data Analyst & Bioinformatician</p>
-    <nav>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#publications">Publications</a>
-      <a href="#activities">Activities</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <section id="about">
-    <h2>Professional Summary</h2>
-    <p>Data Analyst and Bioinformatician with 4 years of experience in data analytics, automation, and software development. Skilled in data transformation and reporting using Python, R, and Power Platform tools.</p>
-  </section>
+    <body class="bg-[#353535] font-mono text-white">
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Microsoft Tools:</strong> Power Automate, Power BI, Excel, Google Workspace</li>
-      <li><strong>Programming:</strong> Python, R, MATLAB, JavaScript, Perl</li>
-      <li><strong>Bioinformatics:</strong> Computational Modelling, Machine Learning, Visualization</li>
-      <li><strong>Video Editing:</strong> Adobe Suite, DaVinci Resolve</li>
-      <li><strong>Languages:</strong> English (Fluent), Hindi (Basic), Malayalam (Fluent)</li>
-    </ul>
-  </section>
+        <nav class="bg-[#353535] text-white px-4 py-6">
+            <div class="max-w-4xl mx-auto flex justify-around items-center">
+                
+                <!-- Name or Logo->
+                <div class="text-lg font-semibold">
+                <a href="#">Anandhu Presannan</a>
+                </div-->
 
-  <section id="experience">
-    <h2>Professional Experience</h2>
-    <div class="job">
-      <h3>Assistant Professor</h3>
-      <p>Amrita Vishwa Vidyapeetham | Feb 2025 – Present</p>
-      <ul>
-        <li>Taught R Programming and Information Systems.</li>
-        <li>Automated workflows with Power Platform tools.</li>
-        <li>Guided bioinformatics student projects.</li>
-      </ul>
-    </div>
-    <div class="job">
-      <h3>Faculty Associate</h3>
-      <p>Amrita Vishwa Vidyapeetham | Sep 2021 – Jan 2025</p>
-      <ul>
-        <li>Led institutional data analytics projects.</li>
-        <li>Mentored students in programming and modeling.</li>
-      </ul>
-    </div>
-    <div class="job">
-      <h3>Research Assistant</h3>
-      <p>Jun 2019 – Aug 2021</p>
-      <ul>
-        <li>Developed e-learning platforms and dashboards.</li>
-        <li>Worked with interdisciplinary teams.</li>
-      </ul>
-    </div>
-    <div class="job">
-      <h3>Project Assistant – Computational Neuroscience</h3>
-      <p>Jun 2018 – May 2019</p>
-      <ul>
-        <li>Modeled neural networks using Python and NEURON.</li>
-      </ul>
-    </div>
-  </section>
+                <!-- Desktop Navigation -->
+                <ul class="hidden md:flex space-x-7 text-sm md:text-xl font-mono">
+                    <li><a href="#about" class="hover:text-[hsl(41,100%,50%)]">About</a></li>
+                    <li><a href="#skills" class="hover:text-[hsl(41,100%,50%)]">Skills</a></li>
+                    <li><a href="#experience" class="hover:text-[hsl(41,100%,50%)]">Experience</a></li>
+                    <li><a href="#education" class="hover:text-[hsl(41,100%,50%)]">Education</a></li>
+                    <li><a href="#activities" class="hover:text-[hsl(41,100%,50%)]">Activities</a></li>
+                </ul>
+            </div>
 
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li>M.Sc. Bioinformatics – Amrita Vishwa Vidyapeetham (2016–2018)</li>
-      <li>B.Sc. Biotechnology – Amrita Vishwa Vidyapeetham (2013–2016)</li>
-    </ul>
-  </section>
+            <!-- Mobile Navigation (icons at top) -->
+            <div class="flex justify-around mt-2 md:hidden text-white text-sm">
+                <a href="#about" class="flex flex-col items-center hover:text-[hsl(41,100%,50%)]">
+                <i data-lucide="user" class="w-5 h-5 pb-1"></i>
+                <span class="text-xs">About</span>
+                </a>
+                <a href="#skills" class="flex flex-col items-center hover:text-[hsl(41,100%,50%)]">
+                <i data-lucide="disc" class="w-5 h-5 pb-1"></i>
+                <span class="text-xs">Skills</span>
+                </a>
+                <a href="#experience" class="flex flex-col items-center hover:text-[hsl(41,100%,50%)]">
+                <i data-lucide="briefcase" class="w-5 h-5 pb-1"></i>
+                <span class="text-xs">Exp</span>
+                </a>
+                <a href="#education" class="flex flex-col items-center hover:text-[hsl(41,100%,50%)]">
+                <i data-lucide="graduation-cap" class="w-5 h-5 pb-1"></i>
+                <span class="text-xs">Edu</span>
+                </a>
+                <a href="#activities" class="flex flex-col items-center hover:text-[hsl(41,100%,50%)]">
+                <i data-lucide="square-plus" class="w-5 h-5 pb-1"></i>
+                <span class="text-xs">Act</span>
+                </a>
+            </div>
+        </nav>
 
-  <section id="publications">
-    <h2>Publications</h2>
-    <ul>
-      <li>Presannan, A., Diwakar, S. (2019). ReConvPy – ELSEVIER</li>
-      <li>IEEE (2018) – Biophysical modeling of cerebellar neurons</li>
-      <li>Epigenetics & Non-Coding RNAs – ELSEVIER (2023)</li>
-    </ul>
-  </section>
+        <!-- Activate Lucide Icons after DOM is loaded -->
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            lucide.createIcons();
+        });
+        </script>
 
-  <section id="activities">
-    <h2>Activities & Leadership</h2>
-    <ul>
-      <li>Core Faculty Member – VIDYUT (Tech-Fest)</li>
-      <li>Experienced in photography, content creation</li>
-      <li>Volunteer – Chinmaya International Foundation</li>
-      <li>Core Member – AYUDH (2014–2018)</li>
-    </ul>
-  </section>
+        
+        <div class="md:flex md:items-center w-full h-auto">
+            <div class="md:w-1/2 drop-shadow-xl/25 scale-100 md:scale-80">
+                <img src="/img/anandhupresannanBWsmall.png" alt="Anandhu Presannan" class="md:w-full h-auto" />
+            </div>
+            <div class="md:w-1/2 text-white justify-items-center md:justify-items-center font-mono px-4">
+                <h1 class="text-3xl md:text-5xl font-bold pb-2">Anandhu Presannan</h1>
+                <p class="text-sm md:text-xl pb-8">Bioinformatics | Open Source Enthusiast</p>
+            </div>
+        </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:anandhupresannan@gmail.com">anandhupresannan@gmail.com</a></p>
-    <p>Phone: +91 9497366967</p>
-    <p>
-      <a href="https://linkedin.com/in/anandhupresannan" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/anandhupresannan" target="_blank">GitHub</a>
-    </p>
-  </section>
+        <div>
 
-  <footer>
-    <p>© 2025 Anandhu Presannan</p>
-  </footer>
+            <section id="about" class="m-5 mt-2 md:mx-35 p-6 border-r-2 border-b-2 rounded-xl border-[hsl(41,100%,50%)] shadow-xl/20 justify-items-center">
+                <h2 class="text-2xl md:text-4xl font-bold">About Me</h2>
+                </br>
+                <p class="text-justify hyphens-auto indent-10 text-sm md:text-lg">Analyst and Bioinformatician with 4 years of experience in data analytics, 
+                    automation, and software development. Strong cross-disciplinary background with a postgraduate degree in Bioinformatics and 
+                    a foundational education in biotechnology. Skilled in data transformation, and reporting. Proven expertise in using 
+                    Power Platform tools (Power Automate, PowerBI), Python, and R for analytical workflows.
+                </p>
+            </section>
+            
+            <section id="skills" class="m-5 md:mx-35 p-6 mt-8 border-r-2 border-b-2 rounded-xl border-[hsl(41,100%,50%)] shadow-xl/20">
+                <h2 class="text-2xl md:text-4xl font-bold text-center mb-4 text-white">Skills</h2>
 
-  <script src="script.js"></script>
-</body>
+                <div class="md:flex justify-center justify-start md:justify-start">
+
+                    <fieldset class="bg-natural-400 border-[hsl(41,100%,50%)] w-full md:w-1/2 rounded-xl p-6">
+                        <legend class="px-1">Programming Languages</legend>
+                    
+                        <div class="w-full">
+                            <div class="mb-1 text-base font-medium dark:text-white flex">Python</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                <div class="bg-gray-600 h-2.5 rounded-full dark:bg-yellow-500" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class="mb-1 text-base font-medium dark:text-white flex">R</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                <div class="bg-gray-600 h-2.5 rounded-full dark:bg-yellow-500" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class="mb-1 text-base font-medium dark:text-white flex">JavaScript</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                <div class="bg-gray-600 h-2.5 rounded-full dark:bg-yellow-500" style="width: 30%"></div>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class="mb-1 text-base font-medium dark:text-white flex">HTML</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                <div class="bg-gray-600 h-2.5 rounded-full dark:bg-yellow-500" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="border-[hsl(41,100%,50%)] w-full md:w-1/2 rounded-xl p-6">
+                        <legend class="px-1">Microsoft Tools</legend>
+                    
+                        <div class="w-full">
+                            <div class="mb-1 text-base font-medium dark:text-white flex">Excel</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                <div class="bg-gray-600 h-2.5 rounded-full dark:bg-yellow-500" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class="mb-1 text-base font-medium dark:text-white flex">Power Automate</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                <div class="bg-gray-600 h-2.5 rounded-full dark:bg-yellow-500" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class="mb-1 text-base font-medium dark:text-white flex">Sharepoint</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                <div class="bg-gray-600 h-2.5 rounded-full dark:bg-yellow-500" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class="mb-1 text-base font-medium dark:text-white flex">PowerBI</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                <div class="bg-gray-600 h-2.5 rounded-full dark:bg-yellow-500" style="width: 35%"></div>
+                            </div>
+                        </div>
+                    </fieldset>
+                
+
+                    <fieldset class="border-[hsl(41,100%,50%)] w-full md:w-1/2 rounded-xl p-6">
+                        <legend class="px-2 text-white text-lg">Multimedia</legend>
+
+                        <div class="flex flex-wrap gap-6 justify-center mt-4 text-[hsl(41,100%,50%)] text-4xl">
+                            <!-- Photoshop -->
+                            <div class="flex flex-col items-center">
+                                <img src="/img/Adobe_Photoshop_CC_icon.svg" alt="Photoshop Icon" class="w-10 h-10 md:w-15 md:h-15 transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110">
+                                <span class="text-sm text-white mt-1">Photoshop</span>
+                            </div>
+
+                            <!-- Illustrator -->
+                            <div class="flex flex-col items-center">
+                                <img src="/img/Adobe_Illustrator_CC_icon.svg" alt="Illustrator Icon" class="w-10 h-10 md:w-15 md:h-15 transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110">
+                                <span class="text-sm text-white mt-1">Illustrator</span>
+                            </div>
+
+                            <!-- Premiere Pro -->
+                            <div class="flex flex-col items-center">
+                                <img src="/img/Adobe_Premiere_Pro_CC_icon.svg" alt="Premiere Icon" class="w-10 h-10 md:w-15 md:h-15 transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110">
+                                <span class="text-sm text-white mt-1">Premiere</span>
+                            </div>
+
+                            <!-- Lightroom -->
+                            <div class="flex flex-col items-center">
+                                <img src="/img/Adobe_Photoshop_Lightroom_CC_logo.svg" alt="Lightroom Icon" class="w-10 h-10 md:w-15 md:h-15 transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110">
+                                <span class="text-sm text-white mt-1">Lightroom</span>
+                            </div>
+
+                            <!-- DaVinci Resolve -->
+                            <div class="flex flex-col items-center">
+                                <img src="/img/DaVinci_Resolve_17_logo.svg" alt="Davinci Icon" class="w-10 h-10 md:w-15 md:h-15 transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110">
+                                <span class="text-sm text-white mt-1">Davinci</span>
+                            </div>
+
+                            <!-- Inkscape -->
+                            <div class="flex flex-col items-center">
+                                <img src="/img/Inkscape_Logo.svg" alt="Inkscape Icon" class="w-10 h-10 md:w-15 md:h-15 transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110">
+                                <span class="text-sm text-white mt-1">Inkscape</span>
+                            </div>
+
+                            <!-- Darktable -->
+                            <div class="flex flex-col items-center">
+                                <img src="/img/Darktable_icon.svg" alt="Darktable Icon" class="w-10 h-10 md:w-15 md:h-15 transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110">
+                                <span class="text-sm text-white mt-1">Darktable</span>
+                            </div>
+
+                        </div>
+                    </fieldset>
+            </section>
+
+            <section id="experience" class="m-5 mt-8 md:mx-35 p-6 border-r-2 border-b-2 rounded-xl border-[hsl(41,100%,50%)] shadow-xl/20 justify-items-center">
+                
+                <div>
+                    <h2 class="text-2xl md:text-4xl font-bold text-center mb-4 text-white">Professional Experience</h2>
+                </div>
+                
+                <div class="flex w-full">
+
+                    <!-- Timeline Container -->
+                    <div class="relative max-w-sms mt-10 mx-6 w-full">
+
+                        <!-- Timeline vertical line -->
+                        <div class=" invisible md:visible absolute left-1/2 h-full border-l-4 border-[hsl(41,100%,50%)]"></div>
+                                    
+                        <!-- Timeline Item 1 -->
+                        <div class="mb-12 border-b-1 border-[hsl(41,100%,50%)] md:border-none justify-items-center md:flex md:items-center md:justify-between">
+
+                            <div class="text-center md:order-1 md:w-5/12 md:text-right pr-6">
+                                <h3 class="font-bold text-lg md:text-xl">Assistant Professor (Contract) </h3>
+                                <p class="text-sm md:text-base">Amrita Vishwa Vidyapeetham, Kollam, Kerala</p>
+                                <p class="text-sm text-[hsl(41,100%,50%)] md:text-base pt-1">01/2025 - Present </p>
+                            </div>
+                            <div class=" invisible md:visible z-20 flex items-center md:order-2 bg-[hsl(41,100%,50%)] shadow-xl w-8 h-8 rounded-full">
+                                <span class="mx-auto text-white font-bold"></span>
+                            </div>
+                            <div class=" pb-4 md:order-3 md:w-5/12 pl-1">
+                                <ul class="list-disc pl-4 text-sm md:text-base">
+                                    <li>Teach R Programming for MSc Bioinformatics students and Information Systems for UG students.</li>
+                                    <li>Conducting class for B.Tech AI and Data Science students.</li>
+                                    <li>Provided automation solutions using Power Automate and visualized outputs using Power BI for academic administration.</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                                    
+                        <!-- Timeline Item 2 -->
+                        <div class="mb-12 border-b-1 border-[hsl(41,100%,50%)] md:border-none justify-items-center md:flex md:items-center md:justify-between">
+
+                            <div class="text-center md:order-1 md:w-5/12 md:text-right pr-6">
+                                <h3 class="font-bold text-lg md:text-xl">Faculty Associate</h3>
+                                <p class="text-sm md:text-base">Amrita Vishwa Vidyapeetham, Kollam, Kerala</p>
+                                <p class="text-sm text-[hsl(41,100%,50%)] md:text-base pt-1">09/2021 - 01/2025</p>
+                            </div>
+                            <div class=" invisible md:visible z-20 flex items-center md:order-2 bg-[hsl(41,100%,50%)] shadow-xl w-8 h-8 rounded-full">
+                                <span class="mx-auto text-white font-bold"></span>
+                            </div>
+                            <div class=" pb-4 md:order-3 md:w-5/12 pl-1">
+                                <ul class="list-disc pl-4 text-sm md:text-base">
+                                    <li>Led small- to medium-scale data analytics projects for the institution.</li>
+                                    <li>Integrated Power Platform applications into academic workflows.</li>
+                                    <li>Mentored students in programming, data science, and systems biology modeling.</li>
+                                    <li>Managed technical content and outreach via institutional digital channels.</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <!-- Timeline Item 3 -->
+                        <div class="mb-12 border-b-1 border-[hsl(41,100%,50%)] md:border-none justify-items-center md:flex md:items-center md:justify-between">
+
+                            <div class="text-center md:order-1 md:w-5/12 md:text-right pr-6">
+                                <h3 class="font-bold text-lg md:text-xl">Research Assistant</h3>
+                                <p class="text-sm md:text-base">Amrita Vishwa Vidyapeetham, Kollam, Kerala</p>
+                                <p class="text-sm text-[hsl(41,100%,50%)] md:text-base pt-1">06/2019 - 08/2025</p>
+                            </div>
+                            <div class=" invisible md:visible z-20 flex items-center md:order-2 bg-[hsl(41,100%,50%)] shadow-xl w-8 h-8 rounded-full">
+                                <span class="mx-auto text-white font-bold"></span>
+                            </div>
+                            <div class=" pb-4 md:order-3 md:w-5/12 pl-1">
+                                <ul class="list-disc pl-4 text-sm md:text-base">
+                                    <li>Developed bioinformatics e-learning platforms and simulation tools.</li>
+                                    <li>Created automated data pipelines and dashboards for project reporting.</li>
+                                    <li>Collaborated with interdisciplinary teams in analytics and data science.</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <!-- Timeline Item 4 -->
+                        <div class="mb-12 border-b-1 border-[hsl(41,100%,50%)] md:border-none justify-items-center md:flex md:items-center md:justify-between">
+
+                            <div class="text-center md:order-1 md:w-5/12 md:text-right pr-6">
+                                <h3 class="font-bold text-lg md:text-xl">Project Assistant – Computational Neuroscience Lab</h3>
+                                <p class="text-sm md:text-base">Amrita Vishwa Vidyapeetham, Kollam, Kerala</p>
+                                <p class="text-sm text-[hsl(41,100%,50%)] md:text-base pt-1">06/2018 - 05/2019</p>
+                            </div>
+                            <div class=" invisible md:visible z-20 flex items-center md:order-2 bg-[hsl(41,100%,50%)] shadow-xl w-8 h-8 rounded-full">
+                                <span class="mx-auto text-white font-bold"></span>
+                            </div>
+                            <div class=" pb-4 md:order-3 md:w-5/12 pl-1">
+                                <ul class="list-disc pl-4 text-sm md:text-base">
+                                    <li>Designed and implemented neuronal network models using Python and NEURON.</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="education" class="m-5 mt-2 md:mx-35 p-6 border-r-2 border-b-2 rounded-xl border-[hsl(41,100%,50%)] shadow-xl/20 justify-items-center">
+                
+                <h2 class="text-2xl md:text-4xl font-bold mb-4">Education</h2>
+
+                <div class="md:flex md:justify-evenly md:w-full">
+
+                    <div class="justify-items-center md:items-center md:flex flex-row mb-4 shadow-xl/10 rounded-xl p-5">
+                        <div>
+                            <i data-lucide="medal" class=" w-10 h-10 md:w-20 h-20 text-[hsl(41,100%,50%)] animate-pulse"></i>
+                        </div>
+                        <div class="justify-items-center text-center md:justify-items-start md:text-start md:pl-6">
+                            <h3 class="text-lg md:text-2xl font-bold pb-2">M.Sc. Bioinformatics</h3>
+                            <p class="text-sm md:text-base">Amrita School of Biotechnology,</p>
+                            <p class="text-sm md:text-base">Amrita Vishwa Vidyapeetham, Kollam, Kerala</p>
+                            <p class="text-sm text-[hsl(41,100%,50%)] md:text-lg py-4">2016 - 2018</p>                            
+                        </div>
+                    </div>
+
+                    <div class="justify-items-center md:items-center md:flex flex-row mb-4 shadow-xl/10 rounded-xl p-5">
+                        <div class="justify-items-center text-center md:justify-items-start md:text-start md:pl-6">
+                            <h3 class="text-lg md:text-2xl font-bold pb-2">M.Sc. Biotechnology</h3>
+                            <p class="text-sm md:text-base">Amrita School of Biotechnology,</p>
+                            <p class="text-sm md:text-base">Amrita Vishwa Vidyapeetham, Kollam, Kerala</p>
+                            <p class="text-sm text-[hsl(41,100%,50%)] md:text-lg py-4">2013 - 2016</p>                            
+                        </div>
+                    </div>
+
+                </div>
+                
+            </section>
+    </body>
 </html>
